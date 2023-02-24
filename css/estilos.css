@@ -1,0 +1,49 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+    margin: 10px 0px 10px;
+}
+
+section {
+    border: 1px;
+    width: 500px;
+    padding: 5px 30px 5px;
+    margin: 0px;
+}
+
+header {
+    border: 1px;
+    width: 500px;
+    padding: 30px;
+    margin: 0px;
+}
+
+ul {
+    padding: 0px 20px 0px;
+}
+
+.claseFecha {
+    font-size: larger;
+    font-weight: normal;
+}
+
+.claseLugar {
+    color: blue;
+}
+
+div {
+    border: 5px solid blue;
+    border-left: 0px;
+    border-right: 0px;
+    width: 500px;
+    padding: 0px;
+    margin: 0px;
+}
