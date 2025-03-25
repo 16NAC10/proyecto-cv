@@ -18,11 +18,11 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <button type="button" id="boton-verde">Fondo Verde</button>
-    <button type="button" id="boton-celeste">Fondo Celeste</button>
-    <button type="button" id="boton-oscuro">Fondo Oscuro</button>
-    <button type="button" id="boton-restablecer">Restablecer Fondo</button>
-    <select onchange="myFunction(this);">
+    <button type="button" id="boton-verde" class="btn btn-primary">Fondo Verde</button>
+    <button type="button" id="boton-celeste" class="btn btn-primary">Fondo Celeste</button>
+    <button type="button" id="boton-oscuro" class="btn btn-primary">Fondo Oscuro</button>
+    <button type="button" id="boton-restablecer" class="btn btn-primary">Restablecer Fondo</button>
+    <select onchange="fuentes(this);" class="btn btn-secondary">
         <option>Georgia</option>
         <option>Palatino Linotype</option>
         <option>Book Antiqua</option>
@@ -54,77 +54,93 @@
                 </header>
                 <nav>
                 </nav>
-                
+
+
+
                 <section>
-                    <h3>EXPERIENCIA LABORAL</h3>
-                    <div class="claseSeparador">
-                        <h4>Auxiliar administrativo</h4>
-                        <h4 class="claseLugar">Rublo Asesores</h4>
-                        <h4 class="claseFecha">10/2016 - Actualidad</h4>
-                        <p>•Capacidad para realizar tareas generales de oficina incluyendo contestar a llamadas de teléfono de varias líneas, gestionar
-                            llamadas telefónicas o mensajes para el personal.</p>
-                        <p>•Gestión de pedidos, relación con proveedores y control de la facturación.</p>
-                        <p>•Capacidad de ofrecer soporte y formación en todo tipo de software en la oficina</p>
-                    </div>
+                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoEA">
+                        EXPERIENCIA LABORAL
+                    </button>
 
-                    <div class="claseSeparador">
-                        <h4>Auxiliar administrativo</h4>
-                        <h4 class="claseLugar">Gestoría Marboré</h4>
-                        <h4 class="claseFecha">09/2011 - 06/2016</h4>
-                        <p>•Responsable de la logística y las agendas para la planificación de reuniones y eventos de la junta directiva.</p>
-                        <p>•Responsable de realizar tareas generales de oficina incluyendo contestar a llamadas de teléfono de varias líneas.</p>
-                        <p>•Competente en la preparación de paquetes para los servicios de envío, recogida y mensajería.</p>
-                    </div>
+                    <div class="collapse show" id="contenidoEA">
+                        <div class="claseSeparador">
+                            <h4>Auxiliar administrativo</h4>
+                            <h4 class="claseLugar">Rublo Asesores</h4>
+                            <h4 class="claseFecha">10/2016 - Actualidad</h4>
+                            <p>•Capacidad para realizar tareas generales de oficina incluyendo contestar a llamadas de teléfono de varias líneas, gestionar
+                                llamadas telefónicas o mensajes para el personal.</p>
+                            <p>•Gestión de pedidos, relación con proveedores y control de la facturación.</p>
+                            <p>•Capacidad de ofrecer soporte y formación en todo tipo de software en la oficina</p>
+                        </div>
 
-                    <div id="ultimoSeparador">
-                        <h4>Auxiliar administrativo</h4>
-                        <h4 class="claseLugar">Hotel Pedro I de Aragón</h4>
-                        <h4 class="claseFecha">01/2010 - 01/2011</h4>
-                        <p>•Capacidad para organizar y programar reuniones y citas con clientes para un equipo de 20 profesionales.</p>
-                        <p>•Suministro de apoyo logístico para programas, reuniones y eventos incluyendo reservas de habitaciones.</p>
-                        <p>•A cargo de desarrollar y actualizar hojas de cálculo y bases de datos para rastrear y analizar información.</p>
-                    </div>
+                        <div class="claseSeparador">
+                            <h4>Auxiliar administrativo</h4>
+                            <h4 class="claseLugar">Gestoría Marboré</h4>
+                            <h4 class="claseFecha">09/2011 - 06/2016</h4>
+                            <p>•Responsable de la logística y las agendas para la planificación de reuniones y eventos de la junta directiva.</p>
+                            <p>•Responsable de realizar tareas generales de oficina incluyendo contestar a llamadas de teléfono de varias líneas.</p>
+                            <p>•Competente en la preparación de paquetes para los servicios de envío, recogida y mensajería.</p>
+                        </div>
 
+                        <div id="ultimoSeparador">
+                            <h4>Auxiliar administrativo</h4>
+                            <h4 class="claseLugar">Hotel Pedro I de Aragón</h4>
+                            <h4 class="claseFecha">01/2010 - 01/2011</h4>
+                            <p>•Capacidad para organizar y programar reuniones y citas con clientes para un equipo de 20 profesionales.</p>
+                            <p>•Suministro de apoyo logístico para programas, reuniones y eventos incluyendo reservas de habitaciones.</p>
+                            <p>•A cargo de desarrollar y actualizar hojas de cálculo y bases de datos para rastrear y analizar información.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <section>
-                    <h3>FORMACIÓN ACADÉMICA</h3>
-                    <p>Ciclo de Grado Medio en Gestión Administrativa, 09/2009</p>
-                    <p>Escuelas Profesionales - Zaragoza</p>
+                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoFA">
+                        FORMACIÓN ACADÉMICA
+                    </button>
+                    <div class="collapse show" id="contenidoFA">
+                        <p></p>
+                        <p>•Ciclo de Grado Medio en Gestión Administrativa, 09/2009</p>
+                        <p>•Escuelas Profesionales - Zaragoza</p>
+                    </div>
                 </section>
             </div>
 
             <div class="col-lg">
-                <aside>
-                    <section>
-                        <h3>CONTACTO</h3>
-                        <p>Dirección: Calle Menéndez Pidal, 13 22004 Huesca</p>
-                        <p>Teléfono: 3825-123456</p>
-                        <p>E-mail: joseocampo@ejemplo.com</p>
-                    </section>
+                <section>
+                    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoOD">
+                        OTROS DATOS
+                    </button>
+                    <div class="collapse show" id="contenidoOD">
+                        <div>
+                            <h3>CONTACTO</h3>
+                            <p>Dirección: Calle Menéndez Pidal, 13 22004 Huesca</p>
+                            <p>Teléfono: 3825-123456</p>
+                            <p>E-mail: joseocampo@ejemplo.com</p>
+                        </div>
 
-                    <section>
-                        <h3>IDIOMAS</h3>
-                        <p>Español: idioma nativo</p>
-                        <p>Inglés: intermedio avanzado</p>
-                    </section>
+                        <div>
+                            <h3>IDIOMAS</h3>
+                            <p>Español: idioma nativo</p>
+                            <p>Inglés: intermedio avanzado</p>
+                        </div>
 
-                    <section>
-                        <h3>APTITUDES</h3>
-                        <ul>
-                            <li>Gestión de hojas de cálculo</li>
-                            <li>Organización del correo</li>
-                            <li>Preparación de facturas</li>
-                            <li>Informes de desarrollo</li>
-                            <li>Organización de reuniones</li>
-                        </ul>
-                    </section>
+                        <div>
+                            <h3>APTITUDES</h3>
+                            <ul>
+                                <li>Gestión de hojas de cálculo</li>
+                                <li>Organización del correo</li>
+                                <li>Preparación de facturas</li>
+                                <li>Informes de desarrollo</li>
+                                <li>Organización de reuniones</li>
+                            </ul>
+                        </div>
 
-                    <section>
-                        <h3>DIPLOMAS</h3>
-                        <p>• Gestor contable titulado por el CEAC</p>
-                    </section>
-                </aside>
+                        <div>
+                            <h3>DIPLOMAS</h3>
+                            <p>• Gestor contable titulado por el CEAC</p>
+                        </div>
+                    </div>
+                </section>
             </div>    
         </div>
     </div>
