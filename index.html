@@ -22,6 +22,7 @@
     <button type="button" id="boton-celeste" class="btn btn-primary">Fondo Celeste</button>
     <button type="button" id="boton-oscuro" class="btn btn-primary">Fondo Oscuro</button>
     <button type="button" id="boton-restablecer" class="btn btn-primary">Restablecer Fondo</button>
+
     <select onchange="fuentes(this);" class="btn btn-secondary">
         <option>Georgia</option>
         <option>Palatino Linotype</option>
@@ -37,6 +38,25 @@
         <option>Courier New</option>
         <option>Lucida Console</option>
     </select>
+
+    <div>
+        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoPC">
+            Personalizar
+        </button>
+
+        <div class="collapse hide" id="contenidoPC">
+            <label>
+                Color de fondo:
+                <input type="color" id="color-fondo" value="#ffffff">
+            </label><br><br>
+            <label>
+                Color de texto:
+                <input type="color" id="color-texto" value="#000000">
+            </label><br><br>
+        </div>
+    </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-lg">
@@ -52,10 +72,6 @@
                         </div>
                     </div>
                 </header>
-                <nav>
-                </nav>
-
-
 
                 <section>
                     <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contenidoEA">
@@ -145,5 +161,5 @@
         </div>
     </div>
 </body>
-    <script src="js/function.js"></script>
+    <script src="main/function.js"></script>
 </html>
